@@ -19,9 +19,9 @@ p.categorie{
 }
 div.contenu{
     background-color:white;
-    margin:-50px 20% 50px 20%;
-    padding: 50px;
-    min-width: 400px;
+    margin:-40px 8px 30px 8px;
+    padding: 8px;
+    
 
 }
 h1{
@@ -62,8 +62,8 @@ table.info{
     background-color: #6C8290C0;
     text-align: center;
     height: 80px;
-    padding:18px 60px 18px 60px;
-    font-size: 14px;
+    padding:15px 60px 19px 60px;
+    font-size: 12px;
     width: 100%;
    
 }
@@ -75,7 +75,7 @@ img.style{
 }
 
 div.colonne{
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
     
 }
@@ -93,11 +93,6 @@ div.colonne1{
     
 }
 
-div.colonne2{
-    
-    float: right;
-    
-}
 
 div.bord p{
     border: 3px solid #8ba1bb ;
@@ -136,4 +131,59 @@ td.num{
 }
 div.ombre{
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* style pour ordinateur*/
+@media only screen and (min-width: 768px) {
+    div.contenu{
+        margin:-50px 20% 50px 20%;
+        padding: 50px;
+        min-width: 400px;
+
+    }
+    table.info{
+        position:absolute;
+        bottom: 0;
+        color:white;
+        background-color: #6C8290C0;
+        text-align: center;
+        height: 80px;
+        padding:18px 60px 18px 60px;
+        font-size: 14px;
+        width: 100%;
+       
+    }
+
+    div.colonne{
+        width: 45%;
+        margin-top: 20px;
+    
+    }
+
+    div.colonne h2 {
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        font-size: 16px;
+        border-bottom: 5px solid #8ba1bb ;
+    }
+    div.colonne1{
+        display :inline-block;
+        margin-right: 10%;
+        
+    }
+
+    div.colonne2{
+        
+        float: right;
+        
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    div.contenu{
+        margin-left:auto;
+        margin-right: auto;
+        width: 420px;
+    }
 }
